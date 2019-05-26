@@ -80,6 +80,12 @@
                     $('.user_pic').attr('src', backData.data.user_pic)
                 }
             })
+            //用户头像预览
+            $('#exampleInputFile').change(function () {
+                var icon = this.files[0]
+                var url = URL.createObjectURL(icon)
+                $(this).prev().attr('src', url)
+            })
         })
     </script>
 </body>
