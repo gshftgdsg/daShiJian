@@ -148,7 +148,7 @@
         $(function () {
             function gitAddMain() {
                 $.ajax({
-                    url: 'https://autumnfish.cn/big32/admin/category_search',
+                    url: ' http://localhost:8000/admin/category_search',
                     type: 'get',
                     success: function (backData) {
                         // console.log(backData);
@@ -163,7 +163,7 @@
             //新增文章类别
             $('#model_add').click(function () {
                 $.ajax({
-                    url: 'https://autumnfish.cn/big32/admin/category_add',
+                    url: ' http://localhost:8000/admin/category_add',
                     type: 'post',
                     data: {
                         name: $('.my-main-name').val(),
